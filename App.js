@@ -1,27 +1,30 @@
 
    import ExpenseItem from './Components/ExpenseItem'
 
-function ExpenseItems() {
+function App(){
   const expense =[
     {
+      id : 'e1',
       title : "Car Wash",
-      Date : new Date(2023/5/28),
+      Date : new Date(2023, 5, 28),
       Amount :  520,
       locationOfExpenditure : "Delhi"
     },
     {
+      id : 'e2',
       title : "Shopping",
-      Date : new Date(2023/1/28),
+      Date : new Date(2023, 1, 28),
       Amount :  400,
       locationOfExpenditure : "Noida"
     },
     {
+      id : 'e3',
       title : "Car Travelling",
-      Date : new Date(2023/2/18),
+      Date : new Date(2023, 2, 18),
       Amount :  520,
       locationOfExpenditure : "Gurgoan"
     }
-  ] 
+  ];
   return (
     <div>
 <h2>Expense Items</h2>
@@ -48,4 +51,4 @@ locationOfExpenditure = {expense[1].loctaionOfExpenditure}
 </div>
   );
 }
- export default ExpenseItems;
+ export default App;
